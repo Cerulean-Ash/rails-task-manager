@@ -9,7 +9,7 @@
       <i class="fa-solid fa-square"></i>
     <% end %>
     <%# <%= check_box_tag [], task.completed %>
-    <%= link_to task.title, task_path(task) %> <%= link_to 'delete',
+    <%= link_to task.title, task_path(task) %> <%= link_to '<i class="fa-solid fa-trash"></i>'.html_safe,
                                                                 task_path(task),
                                                                 method: :delete,
                                                                 data: { confirm: 'Are you sure you want to delete this task'}
